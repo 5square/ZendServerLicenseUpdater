@@ -7,4 +7,5 @@
         </version>
     <libdir>lib</libdir>
     <scriptsdir>scripts</scriptsdir>
+    <updateurl>https://5square.github.io/ZendServerLicenseUpdater/update.json</updateurl>
     </package>
