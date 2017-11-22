@@ -12,7 +12,7 @@ if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
     $cmd = '"C:\Program Files (x86)\Zend\ZendServer\bin\zs-client.bat"';
 }
 else {
-    $cmd = '/usr/local/zend/bin/zs-client';
+    $cmd = '/usr/local/zend/bin/zs-client.sh';
 }
 
 $cmd .= " libraryVersionDeploy --libPackage=\"$zpkTmp\" --zskey=admin --zssecret=$hash";
