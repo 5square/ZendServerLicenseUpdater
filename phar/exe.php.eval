@@ -1,5 +1,0 @@
-$pharTmp = sys_get_temp_dir() . '/LicenseUpdater.phar';
-echo "Download $phar to $pharTmp\n";
-file_put_contents($pharTmp, file_get_contents($phar));
-echo "Executing $pharTmp\n";
-include "phar://zs-client.phar/initialLibDeploy.php";
