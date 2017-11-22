@@ -27,8 +27,10 @@ class ApiManager {
             new Http\Client(null, ['\ZendServerWebApi\Model\Http\Adapter\Socket'])
         );
         
+        $adminApiKey = require_once __DIR__ . '/AdminApiKey.php';
+        
         $apiKey = require_once __DIR__ . '/ApiKey.php';
-        $serviceManager->setService('defaultApiKey', $apiKey());
+        $serviceManager->setService('defaultApiKey', $apiKey($adminApiKey));
         
         $licenseManager = require_once __DIR__ . '/LicenseManager.php';
         $serviceManager->setService('license', $licenseManager($config));
