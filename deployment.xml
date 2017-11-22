@@ -3,7 +3,7 @@
   <type>library</type>
   <name>ZendServerLicenseUpdater</name>
     <version>
-    <release>2017.11</release>
+    <release>2017.12</release>
         </version>
     <libdir>lib</libdir>
     <scriptsdir>scripts</scriptsdir>
