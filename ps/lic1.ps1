@@ -99,16 +99,16 @@ Write-Host "Executing Zend Server License Manager..."
 # Unzip "$downloadLoc\deployment.zip" "$downloadLoc"
 Set-Content -Value "ZS Licensing Manager Results..." -Path "$downloadLoc\results.txt"
 If (Test-Path "$downloadLoc\S2HubLic.phar") {
-    & "$downloadLoc\S2HubLic.phar" *> "$downloadLoc\results.txt"
+    & php "$downloadLoc\S2HubLic.phar" *> "$downloadLoc\results.txt"
 } Else {
     Add-Content -Value "Couldn't even locate the file to run!" -Path "$downloadLoc\results.txt"
 }
 
 # Determine success from the exit code from the script
-if ($lastExitCode -and $lastExitCode -eq 0)  {
+if ($lastExitCode -eq 0)  {
     $result = "SUCCESS"
 } Else {
-    $result = "FAIL"
+    $result = "FAIL [$lastExitCode]"
 }
 
 # Send an e-mail with the results
