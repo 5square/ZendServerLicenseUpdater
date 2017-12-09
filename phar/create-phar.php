@@ -7,9 +7,9 @@ $buildRoot = __DIR__ . "/../build";
 @mkdir($buildRoot, 0777, true);
 
 $phar = new Phar(
-  $buildRoot . "/LicenseUpdater.phar",
+  $buildRoot . "/S2HubLic.phar",
 	FilesystemIterator::CURRENT_AS_FILEINFO | FilesystemIterator::KEY_AS_FILENAME,
-  "LicenseUpdater.phar"
+  "S2HubLic.phar"
 );
 $phar["initialLibDeploy.php"] = file_get_contents($srcRoot . "/initialLibDeploy.php");
 $phar["src/AdminApiKey.php"] = file_get_contents($srcRoot . "/../src/AdminApiKey.php");

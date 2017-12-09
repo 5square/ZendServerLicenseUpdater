@@ -2,7 +2,7 @@
 namespace LicenseUpdater;
 
 try {
-    $apiManager = require 'ApiManager.php';
+    $apiManager = require 'ApiManagerFactory.php';
     $apiManager->serverStoreLicense();
     $apiManager->restartPhp();
 }

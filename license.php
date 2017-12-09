@@ -1,7 +1,5 @@
 <?php 
 return [
-    #'orderNr' => 'jan',
-    #'licenseKey' => '2RLO8G10801G21FA27EFD679F33F511E',
-    'orderNr' => 'my',
-    'licenseKey' => '59LO8G10801G216864F3EA5884F8654B',
+    'orderNr' => 'BO-00184-17',
+    'licenseKey' => '4HJ293O080207190CDABBEB0E1E72DBA',
 ];

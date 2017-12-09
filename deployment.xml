@@ -3,9 +3,9 @@
   <type>library</type>
   <name>ZendServerLicenseUpdater</name>
     <version>
-    <release>2017.12</release>
+    <release>2017.12.1</release>
         </version>
     <libdir>lib</libdir>
     <scriptsdir>scripts</scriptsdir>
-    <updateurl>https://5square.github.io/ZendServerLicenseUpdater/update.json</updateurl>
+    <updateurl>http://downloads.software2.co.uk/lic/update.json</updateurl>
     </package>
